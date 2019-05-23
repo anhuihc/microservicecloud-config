@@ -4,12 +4,10 @@ spring:
 ---
 server:
   port: 7001
-
 spring:
   profiles: dev
-    application:
+  application:
       name: microservicecloud-config-eureka-client
-
 eureka:
   #  server:
   #    enable-self-preservation: false  #禁用自我保护
@@ -22,16 +20,13 @@ eureka:
     service-url:
       #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
       defaultZone: http://eureka7001.com:7001/eureka/
-
 ---
 server:
   port: 7001
-
 spring:
   profiles: test
-    application:
+  application:
       name: microservicecloud-config-eureka-client
-
 eureka:
 #  server:
   #    enable-self-preservation: false  #禁用自我保护
