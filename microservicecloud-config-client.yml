@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: -dev
+---
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-test-dev
+eureka:
+  client:
+    service-url: http://eureka-dev.com:7001/eureka/
+---
+server:
+  port: 8202
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-test-dev
+eureka:
+  client:
+    service-url: http://eureka-dev.com:7001/eureka/
+
